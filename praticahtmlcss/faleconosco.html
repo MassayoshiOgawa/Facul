@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualizar Geladeiras & Outros</title>
+    <link rel="stylesheet" type="text/css" href="css/site.css">
+</head>
+<body>
+    <header>
+        <img src="imgs/logo.png" alt="Logo da Página" title="Logo da Página">
+        <h1> Geladeiras & Outros - Fale conosco </h1>
+    </header>
+    <!-- A tag nav cria uma área para a navegação com menus e outros -->
+    <nav>
+        <a href="index.html"> <div class="opcao"> Início </div> </a>
+        <a href="produtos.html"> <div class="opcao"> Geladeiras e Freezers </div> </a>
+        <a href="faleconosco.html"> <div class="opcao"> Fale conosco </div> </a>
+    </nav>
+    <!-- A tag section defime uma seção dos conteúdos de uma página-->
+     <section>
+        <h2>Fale conosco</h2>
+        <p>Ficou com dúvidas? Preencha este formulário e entraremps em contato</p>
+        <form name="frmfaleconosco" method="get" action="#">
+           
+            <fieldset class="faleConosco">
+                <legend>Dados pessoais</legend>
+                <label for="nome">Nome:</label>
+                <input type="text" name="txtnome" id="nome" placeholder="Digite seu nome completo">
+
+                <label for="fone">Telefone:</label>
+                <input type="text" name="txtfone" id="fone" placeholder="Digite seu telefone">
+
+                <label for="email">Email:</label>
+                <input type="email" name="txtemail" id="email" placeholder="Digite seu email">
+            </fieldset>
+            <fieldset class="faleConosco">Motivo do contato:
+            <label for="motivo">Motivo:</label>
+            <select name="selmotivo" id="motivo">
+                <option value="">Escolha</option>
+                <option value="RE">Reclamação</option>
+                <option value="SU">Sugestâo</option>
+                <option value="PR">Informação sobre o produto</option>
+            </select>
+            <labeL for="comentario">Comentário</labeL>
+            <textarea name="txacomentario" id="comentario"></textarea>
+            <button type="reset">Limpar</button>
+            <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+    </section>
+    <!-- A tag footer define a criação de um rodapé-->
+    <footer> Copyright &copy; GR SADP 2026/1</footer>
+</body>
+</html>

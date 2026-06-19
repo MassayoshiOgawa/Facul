@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/* Configuração da página HTML */
+body{
+    background-color: rgb(173, 173, 212);
+    
+}
+h1{
+    color: rgb(134, 62, 62);
+    padding:50px;
+}
+p{
+    color: rgb(15, 99, 172);
+    padding: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

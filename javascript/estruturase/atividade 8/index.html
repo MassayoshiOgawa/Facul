@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura SE JavaScript</title>
+    <link rel="stylesheet" href="css/style.css">
+    ><script src="js/validacao.js"></script>
+</head>
+<body>
+    <section>
+        <h2>Atividade - Controle de valor de compra</h2>
+        <font face="Arial">
+            <form name="frmnumero" action="#" method="get" onsubmit="return validaFormulario()">
+                <fieldset class="cadidade">
+                    <legend>Entrada de dados</legend>
+                    <br>
+                        <label for="valor">Valor de compra:</label>
+                        <input type="text" name="txtvalor" id="valor">
+                    <br>
+                    <div class="opcoes">
+                        <label> Possui cupom de desconto? </label><br>
+                        <input type="radio" name="rdocupom" value="S">SIM
+                        <input type="radio" name="rdocupom" value="N">NÃO
+                    </div><br>
+                    <br>
+                    <button type="reset">Limpar</button>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+            </form>    
+        </font>
+    </section>
+</body>
+</html>
