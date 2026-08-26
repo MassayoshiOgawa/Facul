@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+    <title>Desafio Final - JS!</title>
+</head>
+<body>
+    <div class="sidebar">
+        <h1 onclick="switchPage('inicio')">Menu</h1>
+        <h2>Estruturas Condicionais</h2>
+        <h3 class = "click" onclick="switchPage('Se')">Se</h3>
+        <h3 class = "click" onclick="switchPage('Caso')">Caso</h3>
+        <h2>Estruturas de Repetição</h2>
+        <h3 class = "click" onclick="switchPage('ParaFaca')">Para Faça</h3>
+        <h3 class = "click" onclick="switchPage('FacaEnquanto')">Faça Enquanto</h3>
+        <h3 class = "click" onclick="switchPage('EnquantoFaca')">Enquanto Faça</h3>
+        <h2>Vetores</h2>
+        <h3 class = "click" onclick="switchPage('Vetor')">Vetor</h3>
+        <h3 class = "click" onclick="switchPage('Matriz')">Matriz</h3>
+    </div>
+    <main>
+        <div id="inicio" class="page">
+            <h1 class="title">Atividades</h1>
+            <h1>Bem vindo ao Projeto Final de JS!</h1>
+            <p>Este documento HTML servirá como repositório de atividades</p>
+            <p>propostas de programação desenvolvidas em HTML, CSS e JavaScript</p>
+            <p>servindo de base para futuras consultas quando houver necessidade</p>
+            <p>ou também para pessoas que estejam em processo de aprendizagem.</p>
+            <img src="imgs/banner.png" id="banner-img">
+        </div>
+
+        <div id="Se" class="page">
+            <h1 class="title">Estrutura Se</h1>
+            <p>A estrutura condicional if (se) em JavaScript executa um bloco</p>
+            <p>de código específico apenas quando uma condição estabelecida é verdadeira.</p>
+        </div>
+
+        <div id="Caso" class="page">
+            <h1 class="title">Estrutura Caso</h1>
+            <p>A estrutura switch (caso) permite executar diferentes blocos de código</p>
+            <p>com base no valor de uma variável, comparando com diversos casos possíveis.</p>
+        </div>
+
+        <div id="ParaFaca" class="page">
+            <h1 class="title">Para Faça</h1>
+            <p>O loop for (para faça) é utilizado quando se deseja repetir um bloco</p>
+            <p>de código um número pré-determinado de vezes.</p>
+        </div>
+
+        <div id="FacaEnquanto" class="page">
+            <h1 class="title">Faça Enquanto</h1>
+            <p>O loop do-while (faça enquanto) executa o bloco de código primeiro</p>
+            <p>e depois verifica a condição, garantindo pelo menos uma execução.</p>
+        </div>
+
+        <div id="EnquantoFaca" class="page">
+            <h1 class="title">Enquanto Faça</h1>
+            <p>O loop while (enquanto faça) verifica a condição antes de cada execução</p>
+            <p>do bloco de código, podendo não executar nenhuma vez se for falsa.</p>
+        </div>
+
+        <div id="Vetor" class="page">
+            <h1 class="title">Vetor</h1>
+            <p>Um vetor é uma estrutura de dados que armazena uma coleção</p>
+            <p>de elementos do mesmo tipo em posições consecutivas de memória.</p>
+        </div>
+
+        <div id="Matriz" class="page">
+            <h1 class="title">Matriz</h1>
+            <p>Uma matriz é uma estrutura de dados bidimensional que organiza</p>
+            <p>elementos em linhas e colunas, como uma tabela.</p>
+        </div>
+    </main>
+</body>
+</html>
