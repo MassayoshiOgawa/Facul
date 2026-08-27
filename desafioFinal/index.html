@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
     <script src="js/script.js" defer></script>
     <title>Desafio Final - JS!</title>
 </head>
+
 <body>
     <div class="sidebar">
         <h1 onclick="switchPage('inicio')">Menu</h1>
         <h2>Estruturas Condicionais</h2>
-        <h3 class = "click" onclick="switchPage('Se')">Se</h3>
-        <h3 class = "click" onclick="switchPage('Caso')">Caso</h3>
+        <h3 class="click" onclick="switchPage('Se')">Se</h3>
+        <h3 class="click" onclick="switchPage('Caso')">Caso</h3>
         <h2>Estruturas de Repetição</h2>
-        <h3 class = "click" onclick="switchPage('ParaFaca')">Para Faça</h3>
-        <h3 class = "click" onclick="switchPage('FacaEnquanto')">Faça Enquanto</h3>
-        <h3 class = "click" onclick="switchPage('EnquantoFaca')">Enquanto Faça</h3>
+        <h3 class="click" onclick="switchPage('ParaFaca')">Para Faça</h3>
+        <h3 class="click" onclick="switchPage('FacaEnquanto')">Faça Enquanto</h3>
+        <h3 class="click" onclick="switchPage('EnquantoFaca')">Enquanto Faça</h3>
         <h2>Vetores</h2>
-        <h3 class = "click" onclick="switchPage('Vetor')">Vetor</h3>
-        <h3 class = "click" onclick="switchPage('Matriz')">Matriz</h3>
+        <h3 class="click" onclick="switchPage('Vetor')">Vetor</h3>
+        <h3 class="click" onclick="switchPage('Matriz')">Matriz</h3>
     </div>
     <main>
         <div id="inicio" class="page">
@@ -48,6 +50,165 @@
             <h1 class="title">Para Faça</h1>
             <p>O loop for (para faça) é utilizado quando se deseja repetir um bloco</p>
             <p>de código um número pré-determinado de vezes.</p>
+            <div class="pageInsideContainer">
+                <div class="pageInsideBoxLeft">
+                    <h1>Atividades</h1>
+                    <h2 onclick="showAtt(1)">Att 1</h2>
+                    <h2 onclick="showAtt(2)">Att 2</h2>
+                </div>
+                <div class="pageInsideBoxRight">
+                    <div class="desc">
+                        <h1>Descrição</h1>
+                        <p>Desc</p>
+                    </div>
+                    <div class="codeArea">
+                        <div id="ParaFacaAtt1">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Estruturas For() atividade 1</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">               
+                                                <fieldset class="cadnumint">        
+                                                    <legend> Entrada de dados</legend>
+                                                    <button type="submit">Enviar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        function validaFormulario() {
+                                            for (let i = 1; i <= 10; i++) {
+                                                console.log(i)
+                                            }
+                                            return false
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                        <div id="ParaFacaAtt2">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+
+                                        <h2>Estruturas caso (Switch() - Atividade 1)</h2>
+                                        <font face="arial">
+
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+
+                                                <fieldset class="cadnumint">
+
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <label for="num1"> Informe o número: </label>
+                                                    <input type="text" name="num1" id="num1">
+                                                    <button type="reset">limpar</button><button type="submit">Enviar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        function validaFormulario() {
+                                            let num1 = parseInt(document.getElementById('num1').value);
+                                            for(let i = 1; i <= 10; i++){
+                                                console.log(`${num1} x ${i} = ${num1 * i}`)
+                                            }
+                                            return false;
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="FacaEnquanto" class="page">
@@ -75,4 +236,5 @@
         </div>
     </main>
 </body>
+
 </html>
