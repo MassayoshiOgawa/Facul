@@ -59,7 +59,7 @@
                 <div class="pageInsideBoxRight">
                     <div class="desc">
                         <h1>Descrição</h1>
-                        <p>Desc</p>
+                        <p id="descParaFaca">Desc</p>
                     </div>
                     <div class="codeArea">
                         <div id="ParaFacaAtt1">
@@ -175,7 +175,7 @@
                                     </style>
                                     <section>
 
-                                        <h2>Estruturas caso (Switch() - Atividade 1)</h2>
+                                        <h2>Atividade</h2>
                                         <font face="arial">
 
                                             <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
@@ -194,7 +194,7 @@
                                     <script type="text/javascript">
                                         function validaFormulario() {
                                             let num1 = parseInt(document.getElementById('num1').value);
-                                            for(let i = 1; i <= 10; i++){
+                                            for (let i = 1; i <= 10; i++) {
                                                 console.log(`${num1} x ${i} = ${num1 * i}`)
                                             }
                                             return false;
@@ -215,24 +215,796 @@
             <h1 class="title">Faça Enquanto</h1>
             <p>O loop do-while (faça enquanto) executa o bloco de código primeiro</p>
             <p>e depois verifica a condição, garantindo pelo menos uma execução.</p>
+            <div class="pageInsideContainer">
+                <div class="pageInsideBoxLeft">
+                    <h1>Atividades</h1>
+                    <h2 onclick="showAtt(1)">Att 1</h2>
+                    <h2 onclick="showAtt(2)">Att 2</h2>
+                </div>
+                <div class="pageInsideBoxRight">
+                    <div class="desc">
+                        <h1>Descrição</h1>
+                        <p id="descFacaEnquanto">Desc</p>
+                    </div>
+                    <div class="codeArea">
+                        <div id="FacaEnquantoAtt1">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Somatória de números</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">               
+                                                <fieldset class="cadnumint">        
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <button type="submit">Começar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        function validaFormulario() {
+                                            let soma = 0
+                                            let num 
+                                            do{
+                                                num = parseInt(prompt("Digite um número [0 Para sair]: "))
+                                                if(isNaN(num)){
+                                                    alert("Insira um número válido.")
+                                                } else{
+                                                    soma += num
+                                                }
+                                            }while(num !== 0)
+                                            console.log("A soma dos números inseridos é: " + soma)
+                                            return false
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                        <div id="FacaEnquantoAtt2">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Tabuada</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+                                                <fieldset class="cadnumint">
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <label for="num1"> Informe o primeiro número: </label>
+                                                    <input type="text" name="num1" id="num1">
+                                                    <button type="reset">limpar</button><button type="submit">Enviar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        function validaFormulario() {
+                                            let num1 = document.getElementById('num1').value;
+
+                                            if (num1 === "" || isNaN(parseInt(num1))) {
+                                                console.log("Os campos tem que estar preenchidos corretamente");
+                                                document.getElementById('num1').focus();
+                                                return false;
+                                            } else {
+                                                count = 1
+                                                do{
+                                                    console.log(`${num1} x ${count} = ${num1*count}`)
+                                                    count++
+                                                }while(count <= 10)
+                                            }
+                                            return false
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="EnquantoFaca" class="page">
             <h1 class="title">Enquanto Faça</h1>
             <p>O loop while (enquanto faça) verifica a condição antes de cada execução</p>
             <p>do bloco de código, podendo não executar nenhuma vez se for falsa.</p>
+            <div class="pageInsideContainer">
+                <div class="pageInsideBoxLeft">
+                    <h1>Atividades</h1>
+                    <h2 onclick="showAtt(1)">Att 1</h2>
+                    <h2 onclick="showAtt(2)">Att 2</h2>
+                </div>
+                <div class="pageInsideBoxRight">
+                    <div class="desc">
+                        <h1>Descrição</h1>
+                        <p id="descEnquantoFaca">Desc</p>
+                    </div>
+                    <div class="codeArea">
+                        <div id="EnquantoFacaAtt1">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Atividade While()</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+                                                <fieldset class="cadnumint">
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <label for="num1"> Clique no botão para inciar</label>
+                                                    <button type="submit">Iniciar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        function validaFormulario(){
+                                            let soma = 0
+                                            let count = 0
+                                            while(count < 3){
+                                                count++
+                                                let answer = parseInt(prompt(`Insira o ${count}° número:`))
+                                                if(isNaN(answer)){
+                                                    alert("Insira um número válido.")
+                                                    soma = 0
+                                                    count = 0
+                                                } else {
+                                                    soma += answer
+                                                }
+                                            }
+                                            console.log(`Soma dos números inseridos: ${soma}`)
+                                            return false;
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                        <div id="EnquantoFacaAtt2">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Atividade While()</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+                                                <fieldset class="cadnumint">
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <label for="num1"> Clique no botão para inciar</label>
+                                                    <button type="submit">Iniciar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        function validaFormulario(){
+                                            let count = 0
+                                            let maior = 0
+                                            while(count < 3){
+                                                count++
+                                                let answer = parseInt(prompt(`Insira o ${count}° número:`))
+                                                if(isNaN(answer)){
+                                                    alert("Insira um número válido.")
+                                                    count = 0
+                                                    maior = 0
+                                                } else {
+                                                    if(answer > maior){
+                                                        maior = answer
+                                                    }
+                                                }
+                                            }
+                                            console.log(`O maior número é: ${maior}`)
+                                            return false;
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="Vetor" class="page">
             <h1 class="title">Vetor</h1>
             <p>Um vetor é uma estrutura de dados que armazena uma coleção</p>
             <p>de elementos do mesmo tipo em posições consecutivas de memória.</p>
+            <div class="pageInsideContainer">
+                <div class="pageInsideBoxLeft">
+                    <h1>Atividades</h1>
+                    <h2 onclick="showAtt(1)">Att 1</h2>
+                    <h2 onclick="showAtt(2)">Att 2</h2>
+                </div>
+                <div class="pageInsideBoxRight">
+                    <div class="desc">
+                        <h1>Descrição</h1>
+                        <p id="descVetor">Desc</p>
+                    </div>
+                    <div class="codeArea">
+                        <div id="VetorAtt1">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Atividade</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+                                                <fieldset class="cadnumint">
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <label for="num1"> Clique no botão para inciar</label>
+                                                    <button type="submit">Iniciar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        function validaFormulario(){
+                                            let notas = []
+                                            let count = 0
+                                            while(count < 3){
+                                                count++
+                                                let nota = parseFloat(prompt(`Insira a ${count}° nota:`))
+                                                if(isNaN(nota) || nota < 0){
+                                                    count = 0
+                                                    alert("Insira um número válido.")
+                                                    notas = []
+                                                } else {
+                                                    notas[count] = nota
+                                                }
+                                            }
+
+                                            for(let i = 1; i < 4; i++){
+                                                if(notas[i] >= 7.5){
+                                                    console.log(notas[i])
+                                                }
+                                            }
+                                            return false;
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                        <div id="VetorAtt2">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Atividade While()</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+                                                <fieldset class="cadnumint">
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <label for="num1"> Clique no botão para inciar</label>
+                                                    <button type="submit">Iniciar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        function validaFormulario(){
+                                            let numeros = []
+                                            let count = 0
+                                            while(count < 3){
+                                                count++
+                                                let numero = parseFloat(prompt(`Insira a ${count}° número:`))
+                                                if(isNaN(numero)){
+                                                    count = 0
+                                                    alert("Insira um número válido.")
+                                                    numeros = []
+                                                } else {
+                                                    numeros[count] = numero
+                                                }
+                                            }
+                                            let maior = 0
+                                            for(let i = 1; i < 4; i++){
+                                                if(numeros[i] > maior){
+                                                    maior = numeros[i]
+                                                }
+                                            }
+                                            console.log(`O maior número inserido foi: ${maior}`)
+                                            return false;
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="Matriz" class="page">
             <h1 class="title">Matriz</h1>
             <p>Uma matriz é uma estrutura de dados bidimensional que organiza</p>
             <p>elementos em linhas e colunas, como uma tabela.</p>
+            <div class="pageInsideContainer">
+                <div class="pageInsideBoxLeft">
+                    <h1>Atividades</h1>
+                    <h2 onclick="showAtt(1)">Att 1</h2>
+                    <h2 onclick="showAtt(2)">Att 2</h2>
+                </div>
+                <div class="pageInsideBoxRight">
+                    <div class="desc">
+                        <h1>Descrição</h1>
+                        <p id="descMatriz">Desc</p>
+                    </div>
+                    <div class="codeArea">
+                        <div id="MatrizAtt1">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Atividade</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+                                                <fieldset class="cadnumint">
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <p>Insira um número no input para multiplicar uma matriz 3x3 inteira que contém números inteiros aleatórios. Olhe o console para ver o resultado!</p>
+                                                    <br>
+                                                    <label for="num1"> Informe um número inteiro: </label>
+                                                    <input type="number" name="num1" id="num1">
+                                                    <button type="reset">limpar</button><button type="submit">Iniciar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        let matriz = [
+                                            [], /*1*/
+                                            [], /*2*/
+                                            []  /*3*/
+                                        ]
+                                        console.log(" [ - ] Matriz gerada:")
+                                        for(let i = 0; i < 3; i++){
+                                            for(let j = 0; j < 3; j++){
+                                                matriz[i][j] = Math.floor(Math.random() * 10) + 10
+                                            }
+                                            console.log(matriz[i][0], matriz[i][1], matriz[i][2])
+                                        }
+                                        console.log(" [ - ] Esperando o número ser inserido e enviado...")
+
+                                        function validaFormulario() {
+                                            let num1 = document.getElementById('num1').value;
+
+                                            if (num1 === "" || !Number.isInteger(parseFloat(num1)) || isNaN(parseInt(num1))) {
+                                                alert("Insira um número válido.");
+                                                document.getElementById('num1').focus();
+                                                return false;
+                                            } else {
+                                                console.log(" [ - ] Número inserido: " + parseInt(num1))
+                                                console.log(" [ - ] Matriz após multiplicar os valores por " + num1 + ": ")
+                                                for(let i = 0; i < 3; i++){
+                                                    console.log(matriz[i][0] * num1, matriz[i][1] * num1, matriz[i][2] * num1)
+                                                }
+                                                return false
+                                            }
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                        <div id="MatrizAtt2">
+                            <form>
+                                <textarea name="fonte" cols="70" rows="20"
+                                    style="height: 260px; margin: 15px 15px 15px 0px;">
+                                    <html>
+                                        <body>
+                                            <style>
+                                                section{
+                                                    margin-top: 0px auto;
+                                                }
+                                                
+                                                .cadnumint{
+                                                    width: 300px;
+                                                    margin: 0px auto;
+                                                    font-weight: bold;
+                                                    margin-bottom: 10px;
+                                                }
+                                    
+                                                .cadnumint input{                                      
+                                                    margin: 5px auto;
+                                                    width: 100%;
+                                                    padding: 5px 0;
+                                                }
+                                                
+                                                .cadnumint button{                                     
+                                                    width: 30%;
+                                                    margin: 0 10%;
+                                                    background-color: #b1ccf5;
+                                                    font-weight: bold;
+                                                    font-size: 16px;
+                                                }
+                                    
+                                                label{
+                                        float: left;
+                                    }
+                                    
+                                    h2{               
+                                        text-align: center;
+                                        margin-top: 0px;
+                                        margin-bottom: 10px;
+                                        font-size: 50px;
+                                    }
+                                    </style>
+                                    <section>
+                                        <h2>Atividade</h2>
+                                        <font face="arial">
+                                            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+                                                <fieldset class="cadnumint">
+                                                    <legend> Entrada de dados</legend>
+                                                    <br>
+                                                    <p>Aperte o botão Iniciar para preencher uma matriz 2x2 para depois realizar a soma dos elementos de uma linha.</p>
+                                                    <br>
+                                                    <div style="text-align: center;">
+                                                        <label for=""> Insira os valores da matriz respectivamente: </label>
+                                                        <br>
+                                                        <label for="num2"> [ 1, 1 ] </label>
+                                                        <input type="text" name="num1" id="num1">
+                                                        <br>
+                                                        <label for="num2"> [ 1, 2 ] </label>
+                                                        <input type="text" name="num2" id="num2">
+                                                        <br>
+                                                        <label for="num3"> [ 2, 1 ] </label>
+                                                        <input type="text" name="num3" id="num3">
+                                                        <br>
+                                                        <label for="num4"> [ 2 , 2] </label>
+                                                        <input type="text" name="num4" id="num4">
+                                                    </div>
+                                                    <br>
+                                                    <div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+                                                        <p>Multiplicar elementos da:</p>
+                                                        <select name="options" id="options">
+                                                            <option value="">Selecione</option>
+                                                            <option value="op1">Linha 1</option>
+                                                            <option value="op2">Linha 2</option>
+                                                        </select>
+                                                    </div>
+                                                    <br>
+                                                    <button type="reset">limpar</button><button type="submit">Iniciar</button>
+                                                </fieldset>
+                                            </form>
+                                        </font>
+                                    </section>
+                                    <script type="text/javascript">
+                                        console.log(" [ - ] Esperando os dados serem enviados...")
+
+                                        function validaFormulario() {
+                                            let num1 = document.getElementById('num1').value;
+                                            let num2 = document.getElementById('num2').value;
+                                            let num3 = document.getElementById('num3').value;
+                                            let num4 = document.getElementById('num4').value;
+                                            let dropdown = document.getElementById('options');
+                                            let stop = false
+
+                                            for(let i = 1; i < 5; i++){
+                                                let element = document.getElementById(`num${i}`).value;
+                                                if (element === "" || !Number.isInteger(parseFloat(element)) || isNaN(parseInt(element))) {
+                                                    stop = true
+                                                }
+                                            }
+
+                                            if (stop == true || !dropdown.value) {
+                                                alert(" [ - ] Preencha corretamente os campos.");
+                                                document.getElementById('num1').focus();
+                                                return false;
+                                            } else {
+                                                if(dropdown.value == "op1"){
+                                                    console.log(` [ - ] A soma da primeira linha da matriz é ${parseInt(num1)} + ${parseInt(num2)} = ${parseInt(num1) + parseInt(num2)}`)
+                                                } else {
+                                                    console.log(` [ - ] A soma da segunda linha da matriz é ${parseInt(num3)} + ${parseInt(num4)} = ${parseInt(num3) + parseInt(num4)}`)
+                                                }
+                                                return false
+                                            }
+                                        }
+                                    </script>           
+                                </body>
+                                </html>
+                                </textarea>
+                                <input type="button" value="Testar a página" onclick="document.write(fonte.value);">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 </body>
