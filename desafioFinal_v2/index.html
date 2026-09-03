@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Desafio Final!</title>
+</head>
+<body>
+    <header><h1>Atividade final de JavaScript!</h1></header>
+    <main>
+        <div class="leftSection">
+            <p class="TopText" onclick="backToDefault()">Menu</p>
+            <br>
+            <h2>Estruturas Condicionais</h2>
+            <h3 onclick="changeTopic('Se')">Se</h3>
+            <h3 onclick="changeTopic('Caso')">Caso</h3>
+            <h2>Estruturas de Repetição</h2>
+            <h3 onclick="changeTopic('ParaFaca')">Para Faça</h3>
+            <h3 onclick="changeTopic('FacaEnquanto')">Faça Enquanto</h3>
+            <h3 onclick="changeTopic('EnquantoFaca')">Enquanto Faça</h3>
+            <h2>Estruturas de Dados</h2>
+            <h3 onclick="changeTopic('Vetor')">Vetor</h3>
+            <h3 onclick="changeTopic('Matriz')">Matriz</h3>
+        </div>
+        <div class="rightSection">
+            <h1 id="title">Bem vindo!</h1>
+            <p id="desc1" class="descrip">Este documento HTML servirá como repositório de atividades</p>
+            <p id="desc2" class="descrip">propostas de programação desenvolvidas em HTML, CSS e JavaScript.</p>
+            <div class="container" id="container">
+                <div class="boxLeft">
+                    <h2 class="boxTitle">Atividades</h2>
+                    <div class="attContainer">
+                        <h3 class="att" onclick="showAtt(1)">Att 1</h3>
+                        <h3 class="att" onclick="showAtt(2)">Att 2</h3>    
+                    </div>
+                </div>
+                <div class="boxMiddle">
+                    <h2 class="boxTitle">Descrição</h2>
+                    <p id="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi nesciunt animi odio, fugit odit eius doloribus consequatur dolores illum est, minus non modi unde repellat debitis, quam maxime accusantium sint.</p>
+                </div>
+                <div class="boxRight">
+                    <h2 class="boxTitle">Código</h2>
+                    <div class="center">
+
+                        <textarea name="fonte" id="textArea">
+                            
+                        </textarea>
+                        <br>
+                        <input type="button" value="Testar sua página" onclick="document.write(fonte.value);"> 
+                    </div>
+                </div>
+            </div>
+            <img src="banner.png" alt="" id="image">
+        </div>
+    </main>
+</body>
+</html>
