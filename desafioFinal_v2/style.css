@@ -1,127 +1,139 @@
-body{
+* {
     margin: 0;
     padding: 0;
-    background-color: rgba(255, 31, 31, 0.459);
-    font-family: monospace;
+    box-sizing: border-box;
 }
 
-h1{
+html, body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    background-color: rgba(255, 31, 31, 0.459);
+    font-family: monospace;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
     text-align: center;
-    font-size: 60px;
+    font-size: clamp(28px, 3.5vw, 60px);
     margin: 5px;
     color: white;
     text-shadow: -4px 3px 1px rgb(255, 0, 0);
 }
 
-main{
+main {
     width: 95%;
-    height: 580px;
-    margin: auto;
-    margin-top: 30px;
+    height: 80vh;
+    margin: 0 auto;
+    margin-top: 10px;
     display: flex;
-    justify-content: space-between  ;
+    gap: 10px;
+    min-height: 0;
 }
 
-.leftSection{
+.leftSection {
     width: 25%;
-    height: 100%;
     background-color: #ffcdcd96;
     box-shadow: -5px 5px 1px rgb(255, 0, 0);
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center ;
+    justify-content: center;
+    overflow: hidden;
 }
 
-.rightSection{
+.rightSection {
     width: 73%;
-    height: 100%;
     background-color: #ffcdcd96;
     box-shadow: -5px 5px 1px rgb(255, 0, 0);
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
 }
 
-.TopText{
-    font-size: 60px;
+.TopText {
+    font-size: clamp(30px, 3.5vw, 60px);
     margin: 0;
     padding: 0;
     text-align: center;
     cursor: pointer;
-    text-decoration: underline  rgba(255, 0, 0, 0.562);
+    text-decoration: underline rgba(255, 0, 0, 0.562);
 }
 
-.leftSection > h2{
-    font-size: 25px;
+.leftSection > h2 {
+    font-size: clamp(14px, 1.5vw, 25px);
     text-align: center;
     margin: 0;
 }
 
-.leftSection > h3{  
-    font-size: 20px;
+.leftSection > h3 {
+    font-size: clamp(12px, 1.2vw, 20px);
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.24);
     width: 150px;
     padding: 9px;
-    margin: 5px;
-    margin: auto;
+    margin: 5px auto;
     border-radius: 1px;
     box-shadow: -3px 3px 1px rgba(0, 0, 0, 0.486);
 }
 
-#title{
+#title {
     color: rgb(255, 255, 255);
     text-shadow: -2px 2px 1px rgb(112, 0, 0);
+    flex-shrink: 0;
 }
 
-.descrip{
+.descrip {
     font-size: 13px;
     text-align: center;
+    flex-shrink: 0;
 }
 
-.container{
+.container {
     width: 95%;
-    margin: auto;
-    height: 380px;
+    height: clamp(280px, 42vh, 380px);
+    flex-shrink: 0;
     display: flex;
     gap: 8px;
+    margin-bottom: 5vh;
+    margin-top: 35px;
 }
 
-.boxLeft{
+.boxLeft {
     width: 20%;
-    height: 100%;
     background-color: rgba(255, 0, 0, 0.185);
     box-shadow: -3px 3px 1px rgba(255, 0, 0, 0.253);
-
+    overflow: hidden;
 }
 
-.boxMiddle{
+.boxMiddle {
     width: 20%;
-    height: 100%;
     background-color: rgba(255, 0, 0, 0.185);
     box-shadow: -3px 3px 1px rgba(255, 0, 0, 0.253);
-
+    overflow: hidden;
 }
 
-.boxRight{
+.boxRight {
     width: 60%;
-    height: 100%;
     background-color: rgba(255, 0, 0, 0.185);
     box-shadow: -3px 3px 1px rgba(255, 0, 0, 0.253);
-
+    overflow: hidden;
 }
 
-.boxTitle{
-    font-size: 27px;    
-    text-align: center  ;
+.boxTitle {
+    font-size: clamp(16px, 1.8vw, 27px);
+    text-align: center;
     color: rgb(255, 255, 255);
     text-shadow: -2px 2px 1px rgb(112, 0, 0);
+    flex-shrink: 0;
 }
 
-.att{
-    font-size: 25px;
-    font-size: 20px;
+.att {
+    font-size: clamp(12px, 1.2vw, 20px);
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0.24);
     width: 150px;
@@ -133,30 +145,39 @@ main{
     color: white;
 }
 
-.attContainer{
+.attContainer {
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
 
-#desc{
+#desc {
     padding: 10px;
     padding-top: 0px;
-    font-size: 16px;
+    font-size: clamp(11px, 1vw, 16px);
+    overflow: hidden;
 }
 
-#textArea{
+#textArea {
     width: 95%;
-    height: 250px;
+    flex: 0 1 auto;
+    height: 70%;
+    min-height: 0;
+    resize: none;
 }
 
-.center{
+.center {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    padding: 8px;
 }
 
-img{
-    margin-top: 200px;
+img {
+    max-height: 20%;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 50px;
 }
