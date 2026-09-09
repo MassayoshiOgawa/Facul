@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lag="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+    <script src="js/valproc.js" defer></script>
+    <style>
+        /*Configurações gerais*/
+
+        section {
+
+            margin-top: 0px auto;
+        }
+
+        /*Configurações da página*/
+
+        .cadnumint {
+
+            width: 300px;
+            margin: 0px auto;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .cadnumint input {
+
+            margin: 5px auto;
+            width: 40%;
+            padding: 5px 0;
+        }
+
+        .cadnumint button {
+
+            width: 30%;
+            margin: 0 10%;
+            background-color: #b1ccf5;
+            font-weight: bold;
+            font-size: 16px;
+        }
+
+        h2 {
+
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 10px;
+            font-size: 50px;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+        input{
+            width: 50px;
+            height: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+
+        <h2>Atividade</h2>
+        <font face="arial">
+
+            <form name="frmnumint" action="#" method="get" onsubmit="return validaFormulario()">
+
+                <fieldset class="cadnumint">
+
+                    <legend> Entrada de dados</legend>
+                    <br>
+                    <p>Aperte o botão Iniciar para preencher uma matriz 2x2 para depois realizar a soma dos elementos de uma linha.</p>
+                    <br>
+                    <div style="text-align: center;">
+                        <label for=""> Insira os valores da matriz respectivamente: </label>
+                        <br>
+                        <label for="num2"> [ 1, 1 ] </label>
+                        <input type="text" name="num1" id="num1">
+                        <br>
+                        <label for="num2"> [ 1, 2 ] </label>
+                        <input type="text" name="num2" id="num2">
+                        <br>
+                        <label for="num3"> [ 2, 1 ] </label>
+                        <input type="text" name="num3" id="num3">
+                        <br>
+                        <label for="num4"> [ 2 , 2] </label>
+                        <input type="text" name="num4" id="num4">
+                    </div>
+                    <br>
+                    <div style="display: flex; justify-content: center; align-items: center; gap: 5px;">
+                        <p>Multiplicar elementos da:</p>
+                        <select name="options" id="options">
+                            <option value="">Selecione</option>
+                            <option value="op1">Linha 1</option>
+                            <option value="op2">Linha 2</option>
+                        </select>
+                    </div>
+                    <br>
+                    <button type="reset">limpar</button><button type="submit">Iniciar</button>
+                </fieldset>
+            </form>
+        </font>
+    </section>
+</body>
+
+</html>

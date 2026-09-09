@@ -31,12 +31,50 @@ let topicInfo = {
 }
 
 let attInfo = [
-    {att: "Se1", descricao: `Testes e testes 1.`, codigo: `
-        
+    {att: "Se1", descricao: `Testes e testes 1.`, 
+    codigoJs: `
+            function validaFormulario(){
+        let idade = document.getElementById("idade").value; 
+        if(idade === ""){
+            alert("Campo Idade é obrigatório!");
+            document.frmtstidade.numidade.focus();
+            return false;
+        }
+        else{
+            let idadev = parseInt(idade);
+            if(idade>=18){
+                alert("Sua idade é "+idadev+" você é maior de idade!");
+            }else{
+                alert(`Sua idade é ${idadev} você é menor de idade!`);;
+            }
+        }
+        return true;
+    }
+    `, 
+    codigoHTML: `
+        <section>
+        <form name="frmtstidade" action="#" method="get" onsubmit="return validaFormulario()">
+            <fieldset class="cadidade">
+                <legend>Entrada de dados</legend>
+                <br>
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="numidade">
+                <br>
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
     `}, 
-    {att: "Se2", descricao: `Testes e testes 2.`, codigo: `
-
-    `},
+    {att: "Se2", descricao: `Testes e testes 1.`, 
+    codigoJs: `
+        
+    `, 
+    codigoHTML: `
+    
+    `}, 
 ]
 
 function showAtt(num){
@@ -46,6 +84,9 @@ function showAtt(num){
 
     }
 }
+
+
+let topOf
 
 let topicAtual = ""
 function changeTopic(topic){

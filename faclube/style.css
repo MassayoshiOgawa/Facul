@@ -1,0 +1,167 @@
+*, body{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    height: 99px;
+    background-color: blue;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.black{
+    background-color: black;
+    height: 33px;
+    width: 100%;
+}
+
+.red{
+    background-color: red;
+    height: 33px;
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 55px;
+    -webkit-text-stroke: 0.7px black;
+    z-index: 99;
+}
+
+.yellow{
+    background-color: yellow;
+    height: 33px;
+    width: 100%;
+}
+
+.textContainer{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+}
+
+.textBox{
+    width: 50%;
+    height: 25%;
+}
+
+.flex{
+    display: flex;
+}
+
+nav{
+    height: 60px;
+    width: 80%;
+    background-color: gray;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a > p{
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+}
+
+a{
+    text-decoration: none;
+}
+
+form{
+    margin: auto;
+    height: 500px;
+    width: 400px;
+    border: 2px solid rgba(122, 122, 122, 0.295);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+input{
+    height: 20px;
+}
+
+.fundo{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+table{
+    width: 80%;
+    margin: 30px auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th, td{
+    border: 1px solid black;
+    padding: 10px;
+}
+
+th{
+    background-color: red;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+button, input[type="submit"]{
+    height: 35px;
+    width: 150px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="reset"]{
+    height: 35px;
+    width: 150px;
+    background-color: gray;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+img{
+    display: block;
+}
+
+.conteudo{
+    width: 80%;
+    margin: 30px auto;
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.bandeira{
+    width: 300px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+h2{
+    text-align: center;
+    margin: 20px 0;
+    color: black;
+    font-size: 32px;
+}

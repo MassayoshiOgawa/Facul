@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Fã Clube da Alemanha - Inscrição</title>
+</head>
+<body>
+    <header>
+        <div class="black"></div>
+        <div class="red">Fã clube da Alemanha!</div>
+        <div class="yellow"></div>
+    </header>
+    <br>
+    <nav>
+        <a href="index.html"><p>Início</p></a>
+        <a href="conteudo.html"><p>Conteúdo</p></a>
+        <a href="inscricao.html"><p>Inscrição</p></a>
+    </nav>
+    <br>
+    <h2>Inscreva-se no Fã-Clube</h2>
+    <form action="" id="forms">
+        <label>Nome: <br><hr> <input type="text" name="nome" id="nome" placeholder="João da Silva"></label>
+        <label>Sexo: <br><hr><input type="radio" name="sexo" value="homem"> Homem <input type="radio" name="sexo" value="mulher"> Mulher</label>
+        <label>Data de Nascimento: <br><hr><input type="text" name="data_nasc" placeholder="00/00/0000" id="datenasc"></label>
+        <label>Email: <br><hr><input type="email" name="email" placeholder="exemplo@gmail.com" id="email"></label>
+        <label>Telefone: <br><hr><input type="tel" name="telefone" placeholder="(00) 00000-0000" id="telf"></label>
+        <label><input type="checkbox" name="participar"> Desejo participar do fã-clube.</label>
+        <div>
+            <input type="submit" value="Enviar" onclick="validarForumalario()">
+            <input type="reset" value="Limpar Formulário">
+        </div>
+    </form>
+</body>
+</html>
