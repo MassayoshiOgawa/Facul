@@ -13,7 +13,6 @@ function changeDefault(){
     document.getElementById('container').style.display = "flex"
 }
 
-let topicAtual = ""
 
 let topicInfo = {
     Se1: "A estrutura condicional if (se) em JavaScript executa um bloco",
@@ -331,10 +330,8 @@ function validaFormularioMatriz2(){
     }
 }
 
-let topicAtual = ""
 function changeTopic(topic){
     changeDefault()
-    topicAtual = topic
     document.getElementById('title').innerText = `Estrutura ${topic}`
     document.getElementById('desc1').innerText = `${topicInfo[`${topic}1`]}`
     document.getElementById('desc2').innerText = `${topicInfo[`${topic}2`]}`
